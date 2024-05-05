@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "nav main main aside"
+    "nav main main aside"
+    "footer footer footer footer";
+    grid-template-columns: 100px 1fr 1fr 100px;
+    grid-auto-rows: 100px 1fr 100px;
+    height: 100vh;
+    gap: 10px;
+} 
+
+.header {
+    background-color: deeppink;
+    grid-area: header;
+}
+
+.nav {
+    background-color: dodgerblue;
+    grid-area: nav;
+}
+
+.main {
+    background-color: blue;
+    grid-area: main;
+}
+
+.footer {
+    background-color: darkviolet;
+    grid-area: footer;
+}
